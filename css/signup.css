@@ -1,0 +1,23 @@
+.container-fluid{
+   text-align: center;
+   border-bottom: 1px solid gray;
+   margin-bottom: 15px;
+}
+.icono{
+font-size: 20px;
+}
+.container{
+   text-align: center;
+}
+.bandera{
+   width: 20px;
+}
+.next{
+   width: 100%;
+   border: 0;
+   background-color: deeppink;
+   color: white;
+   padding: 15px;
+   position: relative;
+    top: 439px;
+}
