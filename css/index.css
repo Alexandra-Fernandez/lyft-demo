@@ -1,12 +1,12 @@
 .loading{
   background: radial-gradient(ellipse at center, rgba(139,45,118,1) 0%, rgba(119,40,97,1) 36%, rgba(139,24,101,1) 60%, rgba(134,21,97,1) 64%, rgba(102,0,71,1) 89%);
    text-align: center;
-   height: 100hv;
    position: absolute;
    top: 0;
    width: 100%;
    min-height: 100vh;
    display: flex;
+   z-index: 999;
 }
 .lyft{
    width: 120px;
@@ -50,6 +50,7 @@
    color: white;
    width: 100%;
    padding: 10px;
+   font-size: 20px;
 }
 
 .log-in-bottom{
@@ -64,6 +65,7 @@
    background: linear-gradient(to bottom, rgba(196,74,170,1) 0%, rgba(180,60,148,1) 0%, rgba(153,0,107,1) 0%, rgba(176,15,126,1) 38%, rgba(195,27,141,1) 69%, rgba(212,37,154,1) 96%);
    width: 100%;
    padding: 11px;
+   font-size: 20px;
 }
 
 .sign-up-bottom{
