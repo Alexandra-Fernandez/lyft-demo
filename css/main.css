@@ -73,3 +73,50 @@
    bottom: 50px;
    right: 8px;
 }
+
+.seccion-sign-up{
+   text-align: center;
+   border-bottom: 1px solid gray;
+   margin-bottom: 15px;
+}
+.icono{
+   font-size: 20px;
+}
+.container{
+   text-align: center;
+}
+.bandera{
+   width: 20px;
+}
+.next{
+   width: 100%;
+   border: 0;
+   background-color: deeppink;
+   color: white;
+   padding: 15px;
+   position: relative;
+   font-size: 20px;
+   top: 388px;
+}
+
+.seccion-ingresar-datos{
+   text-align: center;
+   border-bottom: 1px solid gray;
+   margin-bottom: 20px;
+}
+
+.colocar-codigo{
+   text-align: center;
+   border-bottom: 1px solid gray;
+   margin-bottom: 80px;
+}
+
+.input-number{
+   margin-bottom: 20px;
+}
+.number{
+   width: 15%;
+   border-top-color: white;
+   border: 0;
+   border-bottom: 1px solid black;
+}
