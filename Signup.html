@@ -11,7 +11,7 @@
    <body>
       <section>
          <div class="container-fluid seccion-sign-up">
-           <div class=".icon-chevron-thin-left"></div>
+            <div class=".icon-chevron-thin-left"></div>
             <div class="titulo">
                <h2>Sign Up</h2>
                <p>Join now for free ride credit</p>
@@ -30,19 +30,18 @@
                         <li><a href="#">Separated link</a></li>
                      </ul>
                   </div>
-                  <input type="text" onChange="validarSiNumero(this.value);" placeholder="Escribe tu número" maxlength="9" class="form-control" aria-label="...">
+                  <input id="input-celular" type="text" placeholder="Escribe tu número" maxlength="9" class="form-control">
                </div><br>
                <div>
                   <p>We'll send a text to verify your phone</p>
                </div>
-               <div class="">  
-                  <a href="usuario.html"><button class="next"><span>Next</span></button></a>
-               </div>
+               <a href="verificacion.html"><button class="next-numero"><span>Next</span></button></a>
+               <!--<div id="alerta"><p class="texto-alerta">Tienes que ingresar 9 dígitos</p></div>-->
             </div>
          </div>
       </section>
-      <script src="js/main.js"></script>
       <script src="js/jquery.js"></script>
       <script src="js/bootstrap.js"></script>
+      <script src="js/main.js"></script>
    </body>
 </html>
