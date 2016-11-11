@@ -17,22 +17,26 @@
          <div class="container">
             <div class="row">
                <div class="input-group">
-                  <span class="input-group-addon" id="basic-addon1">@</span>
-                  <input id="input-nombre" maxlength="20" type="text" class="form-control" placeholder="First name        Last name">
+                  <span class="input-group-addon subir-capa" id="basic-addon1"><i class="glyphicon glyphicon-user"></i></span>
+                  <div class="form-control">
+                     <input type="text" maxlength="20" class="input-datos" id="input-nombre" placeholder="Nombre">
+                     <input type="text" maxlength="20" class="input-datos" id="input-apellido" placeholder="Apellido">
+                  </div>
                </div><br>
                <div class="input-group">
                   <span class="input-group-addon" id="basic-addon1">@</span>
                   <input id="input-email" maxlength="60" type="text" class="form-control" placeholder="Email">
                </div><br>
                <div>
-                  <input type="checkbox" aria-label="..."> <span>I agree to Lyft's</span> <a href="#">Terms of Service</a>
+                  <input type="checkbox" id="terminos-condiciones"> <span>I agree to Lyft's</span> <a href="#">Terms of Service</a>
                </div>
+            <a href="mapa.html"><button class="next-datos" id="next-datos"><span>Next</span></button></a>
             </div>
          </div>
       </section>
 
       <script src="js/jquery.js"></script>
       <script src="js/bootstrap.js"></script>
-      <script src="js/app.js"></script>
+      <script src="js/main.js"></script>
    </body>
 </html>

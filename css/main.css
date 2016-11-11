@@ -116,11 +116,6 @@
    margin-top: 28px;
 }
 
-.seccion-ingresar-datos{
-   text-align: center;
-   border-bottom: 1px solid gray;
-   margin-bottom: 20px;
-}
 
 .colocar-codigo{
    text-align: center;
@@ -143,4 +138,38 @@
    padding: 2px 24px;
    border: 1px solid grey;
    border-radius: 7%;
+}
+
+.next-codigo{
+    width: 100%;
+   border: 0;
+   background-color: deeppink;
+   color: white;
+   padding: 15px;
+   position: relative;
+   font-size: 20px;
+   top: 03px;
+}
+.seccion-ingresar-datos{
+   text-align: center;
+   border-bottom: 1px solid gray;
+   margin-bottom: 20px;
+}
+
+.input-datos{
+	border: 0;
+	width: 45%;
+	height: auto;
+	padding-left: 5px;
+}
+
+.next-datos{
+   width: 100%;
+   border: 0;
+   background-color: deeppink;
+   color: white;
+   padding: 15px;
+   position: relative;
+   font-size: 20px;
+   top: 333px;
 }
