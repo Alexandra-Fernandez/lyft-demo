@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?upbcp5');
-  src:  url('fonts/icomoon.eot?upbcp5#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?upbcp5') format('truetype'),
-    url('fonts/icomoon.woff?upbcp5') format('woff'),
-    url('fonts/icomoon.svg?upbcp5#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?k2u83');
+  src:  url('fonts/icomoon.eot?k2u83#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?k2u83') format('truetype'),
+    url('fonts/icomoon.woff?k2u83') format('woff'),
+    url('fonts/icomoon.svg?k2u83#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,7 +24,49 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-chevron-thin-left:before {
+.icon-music:before {
   content: "\e900";
+}
+.icon-home:before {
+  content: "\e901";
+}
+.icon-location:before {
+  content: "\e902";
+}
+.icon-location-outline:before {
+  content: "\e903";
+}
+.icon-cog-outline:before {
+  content: "\e904";
+}
+.icon-gift:before {
+  content: "\e905";
+}
+.icon-lightbulb:before {
+  content: "\e906";
+}
+.icon-credit-card:before {
+  content: "\e907";
+}
+.icon-mode_edit:before {
+  content: "\e254";
+}
+.icon-face:before {
+  content: "\e87c";
+}
+.icon-user:before {
+  content: "\f007";
+}
+.icon-caret-left:before {
+  content: "\f0d9";
+}
+.icon-envelope:before {
+  content: "\f0e0";
+}
+.icon-history:before {
+  content: "\f1da";
+}
+.icon-user-circle-o:before {
+  content: "\f2be";
 }
 

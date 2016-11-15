@@ -1,24 +1,44 @@
 <!DOCTYPE html>
 <html>
    <head>
-      <style type="text/css">
-      html, body { height: 100%; margin: 0; padding: 0; }
-      #map { height: 100%; }
-    </style>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link rel="stylesheet" href="icon/style.css">
+      
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+      <link rel="stylesheet" href="css/main.css">
    </head>
    <body>
+      <ul id="slide-out" class="side-nav">
+         <li><div class="userView">
+            <div class="background">
+               <img src="img/MW-EC442_Lyft_20160105101125_ZH.jpg">
+            </div>
+            <a href="editar-perfil.html"><img class="circle" src="img/Bandera_de_Per%C3%BA.png"></a>
+            <a href="editar-perfil.html"><span class="white-text name">Alexandra</span></a>
+            <a href="editar-perfil.html"><span class="white-text email">alexandra@gmail.com</span></a>
+            </div></li>
+         <li><a href="#"><i class="iconos-navbar icon-location-outline"></i>Home</a></li>
+         <li><div class="divider"></div></li>
+         <li><a href="#"><i class="iconos-navbar icon-gift"></i>Free Rides</a></li>
+         <li><div class="divider"></div></li>
+         <li><a href="#"><i class="iconos-navbar icon-history"></i>Ride history</a></li>
+         <li><div class="divider"></div></li>
+         <li><a href="#"><i class="iconos-navbar icon-credit-card"></i>Payment</a></li>
+         <li><div class="divider"></div></li>
+         <li><a href="#"><i class="iconos-navbar icon-lightbulb"></i>Help</a></li>
+         <li><div class="divider"></div></li>
+         <li><a href="#"><i class="iconos-navbar icon-cog-outline"></i>Settings</a></li>
+      </ul>
+      <a href="#" data-activates="slide-out" class="button-collapse"><i src="">menu</i></a>
+
       <div id="map"></div>
-      <script>
-         function initMap() {
-            // Create a map object and specify the DOM element for display.
-            var map = new google.maps.Map(document.getElementById('map'), {
-               center: {lat: -34.397, lng: 150.644},
-               scrollwheel: false,
-               zoom: 8
-            });
-         }
-      </script>
-      <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA71KRAGtwa9Cibsu3oEAskKQkpGuFMEZ0"
               async defer></script>
+      <script src="js/jquery.js"></script>
+      <script src="js/gmaps.js"></script>
+      <script src="js/geolocalizacion.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
    </body>
 </html>

@@ -6,7 +6,6 @@ $(document).ready(function(){
    $("#next-datos").click(validaremail);
    $("#next-datos").click(validarterminos);
    $(".next-codigo").click(validarcodigo);
-   $(".next-codigo").click(guardarcelular);
    $(".reset-code").click(resetcode);
 });
 var validarnumero = function(e){
@@ -23,12 +22,17 @@ var inputvacio = function(e){
    if($("#input-celular").val().length == 9 ){
       window.localStorage.setItem("random", parseInt(Math.random()*10).toString()+parseInt(Math.random()*10).toString()+parseInt(Math.random()*10).toString());
       alert(localStorage.getItem("random"));
+      /*var inputCel = $("#input-celular").val();
+      window.localStorage.setItem("celular", inputCel);*/ 
+                                  
       return true;
    }
    else{
       alert("ingresa un número");
       return false;
    }
+   /*var numeroguardado = window.localStorage.getItem("celular");
+      $("#guardar-numero").text(inputCel);*/
 }
 
 var validarcodigo = function(){
@@ -41,33 +45,11 @@ var validarcodigo = function(){
    }
 }
 
-var guardarcelular = function(){
-   window.localStorage.setItem("numero", $("input-celular").val().toString());
-   alert(localStorage.getItem("numero"));
-}
 
 var resetcode = function(){
    window.localStorage.setItem("random", parseInt(Math.random()*10).toString()+parseInt(Math.random()*10).toString()+parseInt(Math.random()*10).toString());
    alert(localStorage.getItem("random"));
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 var validarletras = function(e){
    var teclado = e.keyCode;
@@ -91,10 +73,10 @@ var validaremail = function(e){
 };
 
 var validarterminos = function(e){
-   if($("#terminos-condiciones").click){
+   if($("#terminos-condiciones").is(":checked")){
       return true;
    }
-   
+
    else{
       alert("aceptar terminos y condiciones");
       return false;
