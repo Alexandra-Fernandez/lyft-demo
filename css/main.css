@@ -190,7 +190,7 @@
    height: 100vh;
 }
 #sidenav-overlay{
-   background-color: transparent;
+   display: none;
 }
 #icono-foto {
    display: inline-block;
@@ -258,15 +258,32 @@
    margin-top: 25px;
   border-bottom: 1px solid gray;
    padding-bottom: 4px;
+   margin-bottom: 30px;
 }
 .cancel-edit-profile{
     position: absolute;
     left: 23px;
     top: 15px;
 }
-.donde-edit-profile{
-       position: absolute;
+.done-edit-profile{
+      position: absolute;
     right: 23px;
     top: 15px;
 }
+.foto{
+      width: 150px;
+    height: 115px;
+    border-radius: 50%;
+}
+.text-profile-photo{
+   margin-top: 40px;
+   margin-right: 60px;
+}
+.input-group-addon{
+   background-color: transparent;
+   border-color: transparent;
+}
 
+.iconos-perfil{
+   font-size: 20px;
+}

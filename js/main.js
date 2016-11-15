@@ -8,7 +8,7 @@ $(document).ready(function(){
    $(".next-codigo").click(validarcodigo);
    $(".reset-code").click(resetcode);
    $("#next-datos").click(imprimirnombre);
-   
+   $("#done").click(datosagregados);
 });
 var validarnumero = function(e){
    var ascii = e.keyCode;
@@ -92,4 +92,10 @@ var imprimirnombre = function(){
    var inputapellido = $("#input-apellido").val();
    window.localStorage.setItem("apellido", inputapellido);
  
+}
+
+var datosagregados = function(){
+   var inputhome = $("#input-casa").val();
+   window.localStorage.setItem("casa", inputhome);
+   $("#home").text(window.localStorage.getItem("casa"));
 }
