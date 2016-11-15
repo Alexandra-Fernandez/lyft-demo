@@ -32,6 +32,7 @@
 }
 .icon-location:before {
   content: "\e902";
+  font-size: 30px;
 }
 .icon-location-outline:before {
   content: "\e903";
@@ -68,5 +69,7 @@
 }
 .icon-user-circle-o:before {
   content: "\f2be";
+  font-size: 40px;
+  color: black;
 }
 

@@ -1,5 +1,5 @@
 var cargarPagina = function() {
-	$(".white-text").eq(0).text(window.localStorage.getItem("nombre")+" "+window.localStorage.getItem("apellido"));
+	$(".white-text").text(window.localStorage.getItem("nombre")+" "+window.localStorage.getItem("apellido"));
 	$(".white-text").eq(1).text(window.localStorage.getItem("correo"));
 	$(".button-collapse").sideNav({
 		menuWidth: 250,

@@ -7,6 +7,8 @@ $(document).ready(function(){
    $("#next-datos").click(validarterminos);
    $(".next-codigo").click(validarcodigo);
    $(".reset-code").click(resetcode);
+   $("#next-datos").click(imprimirnombre);
+   
 });
 var validarnumero = function(e){
    var ascii = e.keyCode;
@@ -81,4 +83,13 @@ var validarterminos = function(e){
       alert("aceptar terminos y condiciones");
       return false;
    }
+}
+
+var imprimirnombre = function(){
+   var inputnombre = $("#input-nombre").val();
+   window.localStorage.setItem("nombre", inputnombre);
+   
+   var inputapellido = $("#input-apellido").val();
+   window.localStorage.setItem("apellido", inputapellido);
+ 
 }

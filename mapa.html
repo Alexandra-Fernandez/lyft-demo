@@ -5,35 +5,47 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <link rel="stylesheet" href="icon/style.css">
-      
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
       <link rel="stylesheet" href="css/main.css">
    </head>
    <body>
-      <ul id="slide-out" class="side-nav">
-         <li><div class="userView">
-            <div class="background">
-               <img src="img/MW-EC442_Lyft_20160105101125_ZH.jpg">
-            </div>
-            <a href="editar-perfil.html"><img class="circle" src="img/Bandera_de_Per%C3%BA.png"></a>
-            <a href="editar-perfil.html"><span class="white-text name">Alexandra</span></a>
-            <a href="editar-perfil.html"><span class="white-text email">alexandra@gmail.com</span></a>
-            </div></li>
-         <li><a href="#"><i class="iconos-navbar icon-location-outline"></i>Home</a></li>
-         <li><div class="divider"></div></li>
-         <li><a href="#"><i class="iconos-navbar icon-gift"></i>Free Rides</a></li>
-         <li><div class="divider"></div></li>
-         <li><a href="#"><i class="iconos-navbar icon-history"></i>Ride history</a></li>
-         <li><div class="divider"></div></li>
-         <li><a href="#"><i class="iconos-navbar icon-credit-card"></i>Payment</a></li>
-         <li><div class="divider"></div></li>
-         <li><a href="#"><i class="iconos-navbar icon-lightbulb"></i>Help</a></li>
-         <li><div class="divider"></div></li>
-         <li><a href="#"><i class="iconos-navbar icon-cog-outline"></i>Settings</a></li>
-      </ul>
-      <a href="#" data-activates="slide-out" class="button-collapse"><i src="">menu</i></a>
-
+      <div id="icono-foto">
+         <ul id="slide-out" class="side-nav">
+            <li><div class="userView">
+               <div class="background">
+                  <img src="img/MW-EC442_Lyft_20160105101125_ZH.jpg">
+               </div>
+               <a href="perfil.html"><img class="circle" id="editar-perfil" src="img/Sin-usuario.jpg"></a>
+               <span class="white-text name"></span>
+               <span class="white-text email">alexandra@gmail.com</span>
+               </div></li>
+            <li><a href="#"><i class="iconos-navbar icon-location-outline"></i>Home</a></li>
+            <li><div class="divider"></div></li>
+            <li><a href="#"><i class="iconos-navbar icon-gift"></i>Free Rides</a></li>
+            <li><div class="divider"></div></li>
+            <li><a href="#"><i class="iconos-navbar icon-history"></i>Ride history</a></li>
+            <li><div class="divider"></div></li>
+            <li><a href="#"><i class="iconos-navbar icon-credit-card"></i>Payment</a></li>
+            <li><div class="divider"></div></li>
+            <li><a href="#"><i class="iconos-navbar icon-lightbulb"></i>Help</a></li>
+            <li><div class="divider"></div></li>
+            <li><a href="#"><i class="iconos-navbar icon-cog-outline"></i>Settings</a></li>
+         </ul>
+         <a href="#"  data-activates="slide-out" class="button-collapse"><i class="icon-user-circle-o"></i></a>
+      </div>
       <div id="map"></div>
+
+      <section>
+         <div class="direccion">
+            <div class="input-direccion">
+               <input id="direccion-cambiar">
+               <button id="buscar" class="buscar" type="button"><i class="icon-location"></i></button>
+            </div>
+            <div class="direccion-actual" id="direccion">
+               <span></span>
+            </div>
+         </div>
+      </section>
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA71KRAGtwa9Cibsu3oEAskKQkpGuFMEZ0"
               async defer></script>
       <script src="js/jquery.js"></script>
