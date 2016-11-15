@@ -13,6 +13,8 @@ $(document).ready(function(){
    
    $(".reset-code").click(resetcode);
    $("#next-datos").click(imprimirnombre);
+   $("#edit-name").text(localStorage.getItem("nombre"));
+   
    $("#done").click(datosagregados);
    
    $("#home").text(localStorage.getItem("home"));
