@@ -76,9 +76,9 @@ var buscar= function(e){
 					origin: [lat,lon],
 					destination: [latlng.lat(), latlng.lng()],
 					travelMode: 'driving',
-					strokeColor: '#131540',
-					strokeOpacity: 0.6,
-					strokeWeight: 6
+					strokeColor: '#DC143C',
+					strokeOpacity: 0.8,
+					strokeWeight: 8
 				});
 			}
 		}
