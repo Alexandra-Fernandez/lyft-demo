@@ -1,14 +1,23 @@
 $(document).ready(function(){
    $("#input-celular").keydown(validarnumero);
    $(".next-numero").click(inputvacio);
+   $(".next-numero").click(guardarnumero);
+   $("#numero-guardado").text(localStorage.getItem("celular"));
+   
    $("#input-nombre").keydown(validarletras);
    $("#input-apellido").keydown(validarletras);
    $("#next-datos").click(validaremail);
    $("#next-datos").click(validarterminos);
    $(".next-codigo").click(validarcodigo);
+   $(".number").keyup(nextnumero);
+   
    $(".reset-code").click(resetcode);
    $("#next-datos").click(imprimirnombre);
    $("#done").click(datosagregados);
+   
+   $("#home").text(localStorage.getItem("home"));
+   $("#music").text(localStorage.getItem("music"));
+   $("#about-me").text(localStorage.getItem("about"));
 });
 var validarnumero = function(e){
    var ascii = e.keyCode;
@@ -24,8 +33,6 @@ var inputvacio = function(e){
    if($("#input-celular").val().length == 9 ){
       window.localStorage.setItem("random", parseInt(Math.random()*10).toString()+parseInt(Math.random()*10).toString()+parseInt(Math.random()*10).toString());
       alert(localStorage.getItem("random"));
-      /*var inputCel = $("#input-celular").val();
-      window.localStorage.setItem("celular", inputCel);*/ 
                                   
       return true;
    }
@@ -33,8 +40,11 @@ var inputvacio = function(e){
       alert("ingresa un número");
       return false;
    }
-   /*var numeroguardado = window.localStorage.getItem("celular");
-      $("#guardar-numero").text(inputCel);*/
+}
+
+var guardarnumero =function(){
+   var inputcelular = $("#input-celular").val();
+   window.localStorage.setItem("celular", inputcelular);
 }
 
 var validarcodigo = function(){
@@ -45,6 +55,10 @@ var validarcodigo = function(){
       $(".number").val("");
       return false;
    }
+}
+
+var nextnumero = function(){
+      $(this).next().focus();
 }
 
 
@@ -95,7 +109,13 @@ var imprimirnombre = function(){
 }
 
 var datosagregados = function(){
-   var inputhome = $("#input-casa").val();
-   window.localStorage.setItem("casa", inputhome);
-   $("#home").text(window.localStorage.getItem("casa"));
+   var inputhome = $("#input-home").val();
+   window.localStorage.setItem("home", inputhome);
+   
+   var inputmusic = $("#input-music").val();
+   window.localStorage.setItem("music", inputmusic);
+   
+   var inputabout = $("#input-about").val();
+   window.localStorage.setItem("about", inputabout);
+   
 }
